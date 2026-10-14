@@ -4,8 +4,8 @@ Turns a precision rifle match's stages and target distances into the QR payloads
 grouped import reads, and reads them back.
 
 **Experimental.** The format was learned from codes Quantum exported, not from an AB
-specification. The encoder reproduces AB's own exports byte for byte, but no code generated
-from a fresh match has been imported into Quantum yet. See
+specification. The encoder reproduces AB's own exports byte for byte, and codes it built
+from fresh matches, including a three-code split, have imported on Android. See
 [docs/compatibility.md](docs/compatibility.md) before relying on anything.
 
 The codec is independent of any match application. It needs no server and has no runtime

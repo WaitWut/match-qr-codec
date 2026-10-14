@@ -10,4 +10,5 @@ First build. Apache License 2.0. Supports contract version 1 (draft).
 - Options added to the handoff contract: caller-supplied `uuids` and `maxPayloadBytes`.
 - Reproduces AB's single-code and two-code exports, and the code imported on 2026-10-09, byte for
   byte.
-- Not yet tested in Quantum: any code generated from a fresh request.
+- Quantum on Android, 2026-10-14: a fresh match (Sample Cup) and a three-code match split at this
+  codec's points both imported, scanned in order. iOS, reverse order and paper untested.
