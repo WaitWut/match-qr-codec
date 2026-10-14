@@ -1,0 +1,72 @@
+{
+  "description": "The contract's example request (examples/request.json): two stages, three and one targets.",
+  "provenance": {
+    "kind": "synthetic",
+    "source": "UUID 5A3C9E1B07 chosen arbitrarily for this vector, not observed. Expected payload produced by this codec.",
+    "appImport": "Untested. Needed: the structurally fresh match row of the validation plan."
+  },
+  "request": {
+    "schemaVersion": "1",
+    "match": {
+      "name": "Sample Cup",
+      "stages": [
+        {
+          "name": "Fence",
+          "targets": [
+            {
+              "distance": {
+                "value": 63,
+                "unit": "yd"
+              }
+            },
+            {
+              "distance": {
+                "value": 112,
+                "unit": "yd"
+              }
+            },
+            {
+              "distance": {
+                "value": 154,
+                "unit": "yd"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Bench",
+          "targets": [
+            {
+              "distance": {
+                "value": 88,
+                "unit": "yd"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "options": {
+    "uuids": ["5A3C9E1B07"],
+    "maxPayloadBytes": 2953
+  },
+  "expected": {
+    "payloads": [
+      {
+        "part": 1,
+        "text": "{\"appName\":\"Quantum\",\"appVersion\":\"792\",\"data\":\"b9a7edc41ad0daf98d20e09393bb2fee86d38d6ec083cfcd74d2a493bc0aafc693d862afc08cc47eafc69ad21fd1daebac62b2da8fc462b2c78dc47eafc69ad21fd1daebac62b1da8fc462b2c38bc47eafc69ad21fd1daebbb62c193d18b26afa5de853eef939fab3bf3d385b91cafa2fbc47eafc693c476bbda8fc47ea6\",\"dataType\":1,\"rawValue\":\"\",\"uuid\":\"5A3C9E1B07\",\"versionType\":0}"
+      }
+    ],
+    "records": [
+      [
+        ":QR,TS,Fence,Sample Cup%",
+        ":QR,TD,0,0,,63,0,0%",
+        ":QR,TD,1,0,,112,0,0%",
+        ":QR,TD,2,0,,154,0,0%",
+        ":QR,TS,Bench,Sample Cup%",
+        ":QR,TD,0,0,,88,0,0%"
+      ]
+    ]
+  }
+}

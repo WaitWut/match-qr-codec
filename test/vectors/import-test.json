@@ -1,0 +1,152 @@
+{
+  "description": "The PFG export with the group renamed to 'qr import test' and every distance increased by one, keeping AB's UUID.",
+  "provenance": {
+    "kind": "derived",
+    "source": "Generated 2026-10-09 from the AB single-code export by the earlier analysis scripts; the UUID is AB's.",
+    "appImport": "Eric reported a successful Quantum import on 2026-10-09. Platform and app version not recorded."
+  },
+  "request": {
+    "schemaVersion": "1",
+    "match": {
+      "name": "qr import test",
+      "stages": [
+        {
+          "name": "Stage 1",
+          "targets": [
+            {
+              "distance": {
+                "value": 56,
+                "unit": "yd"
+              }
+            },
+            {
+              "distance": {
+                "value": 97,
+                "unit": "yd"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Stage 2",
+          "targets": [
+            {
+              "distance": {
+                "value": 131,
+                "unit": "yd"
+              }
+            },
+            {
+              "distance": {
+                "value": 137,
+                "unit": "yd"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Stage 3",
+          "targets": [
+            {
+              "distance": {
+                "value": 71,
+                "unit": "yd"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Stage 4",
+          "targets": [
+            {
+              "distance": {
+                "value": 107,
+                "unit": "yd"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Stage 5",
+          "targets": [
+            {
+              "distance": {
+                "value": 169,
+                "unit": "yd"
+              }
+            },
+            {
+              "distance": {
+                "value": 48,
+                "unit": "yd"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Stage 6",
+          "targets": [
+            {
+              "distance": {
+                "value": 71,
+                "unit": "yd"
+              }
+            },
+            {
+              "distance": {
+                "value": 127,
+                "unit": "yd"
+              }
+            },
+            {
+              "distance": {
+                "value": 186,
+                "unit": "yd"
+              }
+            },
+            {
+              "distance": {
+                "value": 251,
+                "unit": "yd"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "options": {
+    "uuids": ["3FAF2AD33A"],
+    "maxPayloadBytes": 2953
+  },
+  "expected": {
+    "payloads": [
+      {
+        "part": 1,
+        "text": "{\"appName\":\"Quantum\",\"appVersion\":\"792\",\"data\":\"dc34590c27b54958541281002b115f97172b491e960a7954539200785456dc34590c27a2493b0c43ca493e165fd6493b0549b737277437ca5427105fca5c3c0c43ca552e1a22b4495f735fb5116a4716c657275101c60c66501c94112b541695112e1a22b4495f645fd6493b0c5fd7563a0c43ca552e1a22b4495f645fd7493b0c5fd7563c0c43ca552e1a22b4495f735fb5116a4716c656275101c60c66501c94112b541695112e1a22b4495f645fd6493b0c5fd15427105fd640317121ca31580c2092046c4553d2497a52538f087b4f0192457f45009240317121ca314f0c43ca55270c42d65227105fd640317121ca31580c2092046c4553d3497a52538f087b4f0192457f45009240317121ca314f0c43ca55270c42d05c27105fd640317121ca314f0c42ca55270c47de493b0c43c35f5a725fb23627730787026e0045ca1479001a8b15645207c6116e5307c35f5a725fb22127105fd649271742ca55271056dc34590c27a2493a0c43ca493a1244ca55271056dc34590c27a249390c43ca493a1845ca55271056dc34590c27a249380c43ca49391542ca55271056\",\"dataType\":1,\"rawValue\":\"\",\"uuid\":\"3FAF2AD33A\",\"versionType\":0}"
+      }
+    ],
+    "records": [
+      [
+        ":QR,TS,Stage 1,qr import test%",
+        ":QR,TD,0,0,,56,0,0%",
+        ":QR,TD,1,0,,97,0,0%",
+        ":QR,TS,Stage 2,qr import test%",
+        ":QR,TD,0,0,,131,0,0%",
+        ":QR,TD,1,0,,137,0,0%",
+        ":QR,TS,Stage 3,qr import test%",
+        ":QR,TD,0,0,,71,0,0%",
+        ":QR,TS,Stage 4,qr import test%",
+        ":QR,TD,0,0,,107,0,0%",
+        ":QR,TS,Stage 5,qr import test%",
+        ":QR,TD,0,0,,169,0,0%",
+        ":QR,TD,1,0,,48,0,0%",
+        ":QR,TS,Stage 6,qr import test%",
+        ":QR,TD,0,0,,71,0,0%",
+        ":QR,TD,1,0,,127,0,0%",
+        ":QR,TD,2,0,,186,0,0%",
+        ":QR,TD,3,0,,251,0,0%"
+      ]
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "ok": true,
+  "schemaVersion": "1",
+  "payloads": [
+    {
+      "part": 1,
+      "text": "{\"appName\":\"Quantum\",\"appVersion\":\"792\",\"data\":\"b9a7edc41ad0daf98d20e09393bb2fee86d38d6ec083cfcd74d2a493bc0aafc693d862afc08cc47eafc69ad21fd1daebac62b2da8fc462b2c78dc47eafc69ad21fd1daebac62b1da8fc462b2c38bc47eafc69ad21fd1daebbb62c193d18b26afa5de853eef939fab3bf3d385b91cafa2fbc47eafc693c476bbda8fc47ea6\",\"dataType\":1,\"rawValue\":\"\",\"uuid\":\"5A3C9E1B07\",\"versionType\":0}"
+    }
+  ]
+}

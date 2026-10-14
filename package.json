@@ -1,0 +1,43 @@
+{
+  "name": "match-qr-codec",
+  "version": "0.1.0",
+  "private": true,
+  "license": "UNLICENSED",
+  "description": "Encode a precision rifle match's stages and target distances as AB Quantum grouped-import QR payloads, and decode them back. Experimental; built from observed exports.",
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./schemas/*": "./schemas/*"
+  },
+  "files": [
+    "dist",
+    "schemas"
+  ],
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "format": "prettier --write .",
+    "lint": "prettier --check .",
+    "test": "node --experimental-strip-types --test \"test/**/*.test.ts\"",
+    "verify": "npm run lint && npm run typecheck && npm run build && npm test",
+    "prepare": "npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "22.20.5",
+    "@types/pngjs": "6.0.5",
+    "@types/qrcode": "1.5.6",
+    "ajv": "8.20.0",
+    "jsqr": "1.4.0",
+    "pngjs": "7.0.0",
+    "prettier": "3.9.6",
+    "qrcode": "1.5.4",
+    "typescript": "5.9.3"
+  }
+}

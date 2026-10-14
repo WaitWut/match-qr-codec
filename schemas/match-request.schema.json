@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Proposed match export request version 1",
+  "description": "Draft structure only; not a released API or proof of Quantum support.",
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "const": "1"
+    },
+    "match": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^[^,%\\r\\n]+$",
+          "description": "Draft conservative name policy; semantic validation also rejects whitespace-only names. Actual length and Unicode support remain to be established."
+        },
+        "stages": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^[^,%\\r\\n]+$",
+                "description": "Draft conservative name policy; semantic validation also rejects whitespace-only names. Actual length and Unicode support remain to be established."
+              },
+              "targets": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "distance": {
+                      "type": "object",
+                      "properties": {
+                        "value": {
+                          "type": "number",
+                          "exclusiveMinimum": 0,
+                          "description": "Structural numeric range; fractional support requires separate validation before encoding."
+                        },
+                        "unit": {
+                          "const": "yd",
+                          "description": "Initial proposed unit. Receiving-app interpretation remains to be verified."
+                        }
+                      },
+                      "required": ["value", "unit"],
+                      "additionalProperties": false
+                    }
+                  },
+                  "required": ["distance"],
+                  "additionalProperties": false
+                }
+              }
+            },
+            "required": ["name", "targets"],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": ["name", "stages"],
+      "additionalProperties": false
+    }
+  },
+  "required": ["schemaVersion", "match"],
+  "additionalProperties": false
+}

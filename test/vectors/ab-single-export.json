@@ -1,0 +1,152 @@
+{
+  "description": "AB's single-code export of the PFG rimfire match, six sectors and twelve targets. The group name is truncated to 20 characters by AB's exporter.",
+  "provenance": {
+    "kind": "observed",
+    "source": "Exported by AB Quantum (envelope appVersion 792), supplied 2026-10-08. Private evidence.",
+    "appImport": "Not imported into Quantum by us."
+  },
+  "request": {
+    "schemaVersion": "1",
+    "match": {
+      "name": "PFG PRS Rimfire Matc",
+      "stages": [
+        {
+          "name": "Stage 1",
+          "targets": [
+            {
+              "distance": {
+                "value": 55,
+                "unit": "yd"
+              }
+            },
+            {
+              "distance": {
+                "value": 96,
+                "unit": "yd"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Stage 2",
+          "targets": [
+            {
+              "distance": {
+                "value": 130,
+                "unit": "yd"
+              }
+            },
+            {
+              "distance": {
+                "value": 136,
+                "unit": "yd"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Stage 3",
+          "targets": [
+            {
+              "distance": {
+                "value": 70,
+                "unit": "yd"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Stage 4",
+          "targets": [
+            {
+              "distance": {
+                "value": 106,
+                "unit": "yd"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Stage 5",
+          "targets": [
+            {
+              "distance": {
+                "value": 168,
+                "unit": "yd"
+              }
+            },
+            {
+              "distance": {
+                "value": 47,
+                "unit": "yd"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Stage 6",
+          "targets": [
+            {
+              "distance": {
+                "value": 70,
+                "unit": "yd"
+              }
+            },
+            {
+              "distance": {
+                "value": 126,
+                "unit": "yd"
+              }
+            },
+            {
+              "distance": {
+                "value": 185,
+                "unit": "yd"
+              }
+            },
+            {
+              "distance": {
+                "value": 250,
+                "unit": "yd"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "options": {
+    "uuids": ["3FAF2AD33A"],
+    "maxPayloadBytes": 2953
+  },
+  "expected": {
+    "payloads": [
+      {
+        "part": 1,
+        "text": "{\"appName\":\"Quantum\",\"appVersion\":\"792\",\"data\":\"dc34590c27b54958541281002b115fb6234c0023b4362b721a8b03625216c6286a5410c35f5a725fb22127105fd649271546ca55271056dc34590c27a2493a0c43ca4932165fd6493b0549b737277420ca367f41148345390c23a0222b7021b54559491e800c794553ab047f4356dc34590c27a2493b0c43ca493a1343ca55271056dc34590c27a2493a0c43ca493a1345ca55271056dc34590c27b54958541281002b135fb6234c0023b4362b721a8b03625216c6286a5410c35f5a725fb22127105fd649271743ca55271056dc34590c27b54958541281002b145fb6234c0023b4362b721a8b03625216c6286a5410c35f5a725fb22127105fd649271143d0493b0c43c35f5a725fb23627730787026e0046ca354d6753b6375800218f086d490183454641078540317121ca314f0c43ca55270c42d05d27105fd640317121ca314f0c42ca55270c47d1493b0c43c35f5a725fb23627730787026e0045ca354d6753b6375800218f086d490183454641078540317121ca314f0c43ca55270c44d6493b0c43c35f5a725fb22127115fd649271141d0493b0c43c35f5a725fb22127125fd64927114bd3493b0c43c35f5a725fb22127135fd649271246d6493b0c43c3\",\"dataType\":1,\"rawValue\":\"\",\"uuid\":\"3FAF2AD33A\",\"versionType\":0}"
+      }
+    ],
+    "records": [
+      [
+        ":QR,TS,Stage 1,PFG PRS Rimfire Matc%",
+        ":QR,TD,0,0,,55,0,0%",
+        ":QR,TD,1,0,,96,0,0%",
+        ":QR,TS,Stage 2,PFG PRS Rimfire Matc%",
+        ":QR,TD,0,0,,130,0,0%",
+        ":QR,TD,1,0,,136,0,0%",
+        ":QR,TS,Stage 3,PFG PRS Rimfire Matc%",
+        ":QR,TD,0,0,,70,0,0%",
+        ":QR,TS,Stage 4,PFG PRS Rimfire Matc%",
+        ":QR,TD,0,0,,106,0,0%",
+        ":QR,TS,Stage 5,PFG PRS Rimfire Matc%",
+        ":QR,TD,0,0,,168,0,0%",
+        ":QR,TD,1,0,,47,0,0%",
+        ":QR,TS,Stage 6,PFG PRS Rimfire Matc%",
+        ":QR,TD,0,0,,70,0,0%",
+        ":QR,TD,1,0,,126,0,0%",
+        ":QR,TD,2,0,,185,0,0%",
+        ":QR,TD,3,0,,250,0,0%"
+      ]
+    ]
+  }
+}

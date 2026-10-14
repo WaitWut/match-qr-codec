@@ -1,0 +1,10 @@
+{
+  "ok": false,
+  "issues": [
+    {
+      "code": "UNSUPPORTED_DISTANCE_PRECISION",
+      "path": "/match/stages/0/targets/0/distance/value",
+      "message": "Fractional distances have not yet been validated for this experimental encoding profile."
+    }
+  ]
+}

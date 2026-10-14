@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Proposed match export result",
+  "description": "Part order, consecutive numbering, payload validity and full target coverage require semantic checks.",
+  "oneOf": [
+    {
+      "type": "object",
+      "properties": {
+        "ok": {
+          "const": true
+        },
+        "schemaVersion": {
+          "const": "1"
+        },
+        "payloads": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "properties": {
+              "part": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "text": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Complete Quantum envelope text; semantic validation must decode and verify it."
+              }
+            },
+            "required": ["part", "text"],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": ["ok", "schemaVersion", "payloads"],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "ok": {
+          "const": false
+        },
+        "issues": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "properties": {
+              "code": {
+                "type": "string",
+                "minLength": 1
+              },
+              "path": {
+                "type": "string",
+                "description": "JSON Pointer to the issue, or empty string for the document."
+              },
+              "message": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": ["code", "path", "message"],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": ["ok", "issues"],
+      "additionalProperties": false
+    }
+  ]
+}

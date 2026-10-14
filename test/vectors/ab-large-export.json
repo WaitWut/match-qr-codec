@@ -1,0 +1,324 @@
+{
+  "description": "AB's two-code export of Large Export Test: six sectors of six targets, split inside Sector 6. Any maxPayloadBytes from 1921 to 1960 reproduces AB's split.",
+  "provenance": {
+    "kind": "observed",
+    "source": "Exported by AB Quantum (envelope appVersion 792), supplied 2026-10-14. Private evidence.",
+    "appImport": "Not imported into Quantum by us."
+  },
+  "request": {
+    "schemaVersion": "1",
+    "match": {
+      "name": "Large Export Test",
+      "stages": [
+        {
+          "name": "Sector 1",
+          "targets": [
+            {
+              "distance": {
+                "value": 100,
+                "unit": "yd"
+              }
+            },
+            {
+              "distance": {
+                "value": 200,
+                "unit": "yd"
+              }
+            },
+            {
+              "distance": {
+                "value": 300,
+                "unit": "yd"
+              }
+            },
+            {
+              "distance": {
+                "value": 400,
+                "unit": "yd"
+              }
+            },
+            {
+              "distance": {
+                "value": 500,
+                "unit": "yd"
+              }
+            },
+            {
+              "distance": {
+                "value": 600,
+                "unit": "yd"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Sector 2",
+          "targets": [
+            {
+              "distance": {
+                "value": 100,
+                "unit": "yd"
+              }
+            },
+            {
+              "distance": {
+                "value": 200,
+                "unit": "yd"
+              }
+            },
+            {
+              "distance": {
+                "value": 300,
+                "unit": "yd"
+              }
+            },
+            {
+              "distance": {
+                "value": 400,
+                "unit": "yd"
+              }
+            },
+            {
+              "distance": {
+                "value": 500,
+                "unit": "yd"
+              }
+            },
+            {
+              "distance": {
+                "value": 600,
+                "unit": "yd"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Sector 3",
+          "targets": [
+            {
+              "distance": {
+                "value": 100,
+                "unit": "yd"
+              }
+            },
+            {
+              "distance": {
+                "value": 200,
+                "unit": "yd"
+              }
+            },
+            {
+              "distance": {
+                "value": 300,
+                "unit": "yd"
+              }
+            },
+            {
+              "distance": {
+                "value": 400,
+                "unit": "yd"
+              }
+            },
+            {
+              "distance": {
+                "value": 500,
+                "unit": "yd"
+              }
+            },
+            {
+              "distance": {
+                "value": 600,
+                "unit": "yd"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Sector 4",
+          "targets": [
+            {
+              "distance": {
+                "value": 100,
+                "unit": "yd"
+              }
+            },
+            {
+              "distance": {
+                "value": 200,
+                "unit": "yd"
+              }
+            },
+            {
+              "distance": {
+                "value": 300,
+                "unit": "yd"
+              }
+            },
+            {
+              "distance": {
+                "value": 400,
+                "unit": "yd"
+              }
+            },
+            {
+              "distance": {
+                "value": 500,
+                "unit": "yd"
+              }
+            },
+            {
+              "distance": {
+                "value": 600,
+                "unit": "yd"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Sector 5",
+          "targets": [
+            {
+              "distance": {
+                "value": 100,
+                "unit": "yd"
+              }
+            },
+            {
+              "distance": {
+                "value": 200,
+                "unit": "yd"
+              }
+            },
+            {
+              "distance": {
+                "value": 300,
+                "unit": "yd"
+              }
+            },
+            {
+              "distance": {
+                "value": 400,
+                "unit": "yd"
+              }
+            },
+            {
+              "distance": {
+                "value": 500,
+                "unit": "yd"
+              }
+            },
+            {
+              "distance": {
+                "value": 600,
+                "unit": "yd"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Sector 6",
+          "targets": [
+            {
+              "distance": {
+                "value": 100,
+                "unit": "yd"
+              }
+            },
+            {
+              "distance": {
+                "value": 200,
+                "unit": "yd"
+              }
+            },
+            {
+              "distance": {
+                "value": 300,
+                "unit": "yd"
+              }
+            },
+            {
+              "distance": {
+                "value": 400,
+                "unit": "yd"
+              }
+            },
+            {
+              "distance": {
+                "value": 500,
+                "unit": "yd"
+              }
+            },
+            {
+              "distance": {
+                "value": 600,
+                "unit": "yd"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "options": {
+    "uuids": ["32A13D34F3", "B415579EA5"],
+    "maxPayloadBytes": 1921
+  },
+  "expected": {
+    "payloads": [
+      {
+        "part": 1,
+        "text": "{\"appName\":\"Quantum\",\"appVersion\":\"792\",\"data\":\"d13a4eebeeb8474fa2d99f046ee78bc7277db5dd8e4b59bfca841968e7ee8e1868e280ba393093fec75b30f796c75a2cf796db472ce280ba393093fec75a30f796c7592cf796db472ce280ba393093fec75930f796c7582cf796db472ce280ba393093fec75830f796c75f2cf796db472ce280ba393093fec75f30f796c75e2cf796db472ce280ba393093fec75e30f796c75d2cf796db472ce280ba393093e9c73879a4ce84193cf596a70a6ea0dfcb2e64b7d5991f3c93df981f39fdebb947488396db472ceb96da5b2ceb8ac75b39fdebb947488396da472ceb96d95b2ceb8ac75b39fdebb947488396d9472ceb96d85b2ceb8ac75b39fdebb947488396d8472ceb96df5b2ceb8ac75b39fdebb947488396df472ceb96de5b2ceb8ac75b39fdebb947488396de472ceb96dd5b2ceb8ac75b39fdebb947489496b80e7fb3d5994b2febf68a197ba29aae136ca8c89f4b48a2c99f4e2696e8c73f58eb8ac75b30eb8bdb5b30f796db4e2696e8c73f58eb8bc75b30eb88db5b30f796db4e2696e8c73f58eb88c75b30eb89db5b30f796db4e2696e8c73f58eb89c75b30eb8edb5b30f796db4e2696e8c73f58eb8ec75b30eb8fdb5b30f796db4e2696e8c73f58eb8fc75b30eb8cdb5b30f796db4e2696e8c73f4febe98e0868a8c8cb5f308bdb990c79e7ff931b73b5cecb3f79b4cece514d9596bf2f30f796db4730f68adb472ceb8ace514d9596bf2f30f696db4730f58adb472ceb8ace514d9596bf2f30f596db4730f48adb472ceb8ace514d9596bf2f30f496db4730f38adb472ceb8ace514d9596bf2f30f396db4730f28adb472ceb8ace514d9596bf2f30f296db4730f18adb472ceb8ace514d9596bf383094df881f73b59ade4750a6c88c0e3c82c29b046eb39abf0e6fb39fd13a4eebeeaf472ceb8ac7472df78ac75b30f79fd13a4eebeeaf472deb8ac7472ef78ac75b30f79fd13a4eebeeaf472eeb8ac7472ff78ac75b30f79fd13a4eebeeaf472feb8ac74728f78ac75b30f79fd13a4eebeeaf4728eb8ac74729f78ac75b30f79fd13a4eebeeaf4729eb8ac7472af78ac75b30f79fd13a4eebeeb8474fa2d99f046ee78cc7277db5dd8e4b59bfca841968e7ee8e1868e280ba393093fec75b30f796c75a2cf796db472ce280ba393093fec75a30f796c7592cf796db472ce280ba393093fec75930f796c7582cf796db472ce280ba393093fec75830f796c75f2cf796db472ce280ba393093fec75f30f796c75e2cf796db472ce2\",\"dataType\":1,\"rawValue\":\"\",\"uuid\":\"32A13D34F3\",\"versionType\":0}"
+      },
+      {
+        "part": 2,
+        "text": "{\"appName\":\"Quantum\",\"appVersion\":\"792\",\"data\":\"578e2441b83ef325088f19b0044dda4193171f8b08ff33159c02ad024db808ac0248d63c8d5a39a841ea5a5dc041e9465dc05df34648\",\"dataType\":1,\"rawValue\":\"\",\"uuid\":\"B415579EA5\",\"versionType\":0}"
+      }
+    ],
+    "records": [
+      [
+        ":QR,TS,Sector 1,Large Export Test%",
+        ":QR,TD,0,0,,100,0,0%",
+        ":QR,TD,1,0,,200,0,0%",
+        ":QR,TD,2,0,,300,0,0%",
+        ":QR,TD,3,0,,400,0,0%",
+        ":QR,TD,4,0,,500,0,0%",
+        ":QR,TD,5,0,,600,0,0%",
+        ":QR,TS,Sector 2,Large Export Test%",
+        ":QR,TD,0,0,,100,0,0%",
+        ":QR,TD,1,0,,200,0,0%",
+        ":QR,TD,2,0,,300,0,0%",
+        ":QR,TD,3,0,,400,0,0%",
+        ":QR,TD,4,0,,500,0,0%",
+        ":QR,TD,5,0,,600,0,0%",
+        ":QR,TS,Sector 3,Large Export Test%",
+        ":QR,TD,0,0,,100,0,0%",
+        ":QR,TD,1,0,,200,0,0%",
+        ":QR,TD,2,0,,300,0,0%",
+        ":QR,TD,3,0,,400,0,0%",
+        ":QR,TD,4,0,,500,0,0%",
+        ":QR,TD,5,0,,600,0,0%",
+        ":QR,TS,Sector 4,Large Export Test%",
+        ":QR,TD,0,0,,100,0,0%",
+        ":QR,TD,1,0,,200,0,0%",
+        ":QR,TD,2,0,,300,0,0%",
+        ":QR,TD,3,0,,400,0,0%",
+        ":QR,TD,4,0,,500,0,0%",
+        ":QR,TD,5,0,,600,0,0%",
+        ":QR,TS,Sector 5,Large Export Test%",
+        ":QR,TD,0,0,,100,0,0%",
+        ":QR,TD,1,0,,200,0,0%",
+        ":QR,TD,2,0,,300,0,0%",
+        ":QR,TD,3,0,,400,0,0%",
+        ":QR,TD,4,0,,500,0,0%",
+        ":QR,TD,5,0,,600,0,0%",
+        ":QR,TS,Sector 6,Large Export Test%",
+        ":QR,TD,0,0,,100,0,0%",
+        ":QR,TD,1,0,,200,0,0%",
+        ":QR,TD,2,0,,300,0,0%",
+        ":QR,TD,3,0,,400,0,0%",
+        ":QR,TD,4,0,,500,0,0%"
+      ],
+      [":QR,TS,Sector 6,Large Export Test%", ":QR,TD,5,0,,600,0,0%"]
+    ]
+  }
+}

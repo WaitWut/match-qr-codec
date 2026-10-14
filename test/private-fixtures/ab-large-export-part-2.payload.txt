@@ -1,0 +1,1 @@
+{"appName":"Quantum","appVersion":"792","data":"578e2441b83ef325088f19b0044dda4193171f8b08ff33159c02ad024db808ac0248d63c8d5a39a841ea5a5dc041e9465dc05df34648","dataType":1,"rawValue":"","uuid":"B415579EA5","versionType":0}

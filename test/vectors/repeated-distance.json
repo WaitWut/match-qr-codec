@@ -1,0 +1,72 @@
+{
+  "description": "Distinct targets that share a distance, within a stage and across stages. Nothing is merged.",
+  "provenance": {
+    "kind": "synthetic",
+    "source": "UUID chosen arbitrarily. Expected payload produced by this codec.",
+    "appImport": "Untested."
+  },
+  "request": {
+    "schemaVersion": "1",
+    "match": {
+      "name": "Repeat Test",
+      "stages": [
+        {
+          "name": "Rooftop",
+          "targets": [
+            {
+              "distance": {
+                "value": 100,
+                "unit": "yd"
+              }
+            },
+            {
+              "distance": {
+                "value": 100,
+                "unit": "yd"
+              }
+            },
+            {
+              "distance": {
+                "value": 250,
+                "unit": "yd"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Tank",
+          "targets": [
+            {
+              "distance": {
+                "value": 100,
+                "unit": "yd"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "options": {
+    "uuids": ["0F1E2D3C4B"],
+    "maxPayloadBytes": 2953
+  },
+  "expected": {
+    "payloads": [
+      {
+        "part": 1,
+        "text": "{\"appName\":\"Quantum\",\"appVersion\":\"792\",\"data\":\"ec855ee35685f85ea06db0a063bf2e84b17caa63a2f458aa71a2f1369e50fa8048e332fae420e333e6e420ff2ee6f1369e50fa8048e333fae420e333e6e420ff2ee6f1369e50fa8048e330fae420e330e3e420ff2ee6f1369e50fa805fe356b7ba67e350b3a469ae76f68069bc76f3ee5d9d2e829020ff2ee6f820fe32e6f83ce332f3\",\"dataType\":1,\"rawValue\":\"\",\"uuid\":\"0F1E2D3C4B\",\"versionType\":0}"
+      }
+    ],
+    "records": [
+      [
+        ":QR,TS,Rooftop,Repeat Test%",
+        ":QR,TD,0,0,,100,0,0%",
+        ":QR,TD,1,0,,100,0,0%",
+        ":QR,TD,2,0,,250,0,0%",
+        ":QR,TS,Tank,Repeat Test%",
+        ":QR,TD,0,0,,100,0,0%"
+      ]
+    ]
+  }
+}

@@ -1,0 +1,429 @@
+{
+  "description": "A realistic full match, eight stages of six targets, at a 1000-byte limit. Splits into several codes, some mid-stage.",
+  "provenance": {
+    "kind": "synthetic",
+    "source": "UUIDs chosen arbitrarily. Expected payloads produced by this codec.",
+    "appImport": "Untested. Whether Quantum accepts splits at points other than AB's is unknown."
+  },
+  "request": {
+    "schemaVersion": "1",
+    "match": {
+      "name": "Capacity Test",
+      "stages": [
+        {
+          "name": "Stage 1",
+          "targets": [
+            {
+              "distance": {
+                "value": 50,
+                "unit": "yd"
+              }
+            },
+            {
+              "distance": {
+                "value": 125,
+                "unit": "yd"
+              }
+            },
+            {
+              "distance": {
+                "value": 200,
+                "unit": "yd"
+              }
+            },
+            {
+              "distance": {
+                "value": 275,
+                "unit": "yd"
+              }
+            },
+            {
+              "distance": {
+                "value": 75,
+                "unit": "yd"
+              }
+            },
+            {
+              "distance": {
+                "value": 150,
+                "unit": "yd"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Stage 2",
+          "targets": [
+            {
+              "distance": {
+                "value": 75,
+                "unit": "yd"
+              }
+            },
+            {
+              "distance": {
+                "value": 150,
+                "unit": "yd"
+              }
+            },
+            {
+              "distance": {
+                "value": 225,
+                "unit": "yd"
+              }
+            },
+            {
+              "distance": {
+                "value": 300,
+                "unit": "yd"
+              }
+            },
+            {
+              "distance": {
+                "value": 100,
+                "unit": "yd"
+              }
+            },
+            {
+              "distance": {
+                "value": 175,
+                "unit": "yd"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Stage 3",
+          "targets": [
+            {
+              "distance": {
+                "value": 100,
+                "unit": "yd"
+              }
+            },
+            {
+              "distance": {
+                "value": 175,
+                "unit": "yd"
+              }
+            },
+            {
+              "distance": {
+                "value": 250,
+                "unit": "yd"
+              }
+            },
+            {
+              "distance": {
+                "value": 50,
+                "unit": "yd"
+              }
+            },
+            {
+              "distance": {
+                "value": 125,
+                "unit": "yd"
+              }
+            },
+            {
+              "distance": {
+                "value": 200,
+                "unit": "yd"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Stage 4",
+          "targets": [
+            {
+              "distance": {
+                "value": 125,
+                "unit": "yd"
+              }
+            },
+            {
+              "distance": {
+                "value": 200,
+                "unit": "yd"
+              }
+            },
+            {
+              "distance": {
+                "value": 275,
+                "unit": "yd"
+              }
+            },
+            {
+              "distance": {
+                "value": 75,
+                "unit": "yd"
+              }
+            },
+            {
+              "distance": {
+                "value": 150,
+                "unit": "yd"
+              }
+            },
+            {
+              "distance": {
+                "value": 225,
+                "unit": "yd"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Stage 5",
+          "targets": [
+            {
+              "distance": {
+                "value": 150,
+                "unit": "yd"
+              }
+            },
+            {
+              "distance": {
+                "value": 225,
+                "unit": "yd"
+              }
+            },
+            {
+              "distance": {
+                "value": 300,
+                "unit": "yd"
+              }
+            },
+            {
+              "distance": {
+                "value": 100,
+                "unit": "yd"
+              }
+            },
+            {
+              "distance": {
+                "value": 175,
+                "unit": "yd"
+              }
+            },
+            {
+              "distance": {
+                "value": 250,
+                "unit": "yd"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Stage 6",
+          "targets": [
+            {
+              "distance": {
+                "value": 175,
+                "unit": "yd"
+              }
+            },
+            {
+              "distance": {
+                "value": 250,
+                "unit": "yd"
+              }
+            },
+            {
+              "distance": {
+                "value": 50,
+                "unit": "yd"
+              }
+            },
+            {
+              "distance": {
+                "value": 125,
+                "unit": "yd"
+              }
+            },
+            {
+              "distance": {
+                "value": 200,
+                "unit": "yd"
+              }
+            },
+            {
+              "distance": {
+                "value": 275,
+                "unit": "yd"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Stage 7",
+          "targets": [
+            {
+              "distance": {
+                "value": 200,
+                "unit": "yd"
+              }
+            },
+            {
+              "distance": {
+                "value": 275,
+                "unit": "yd"
+              }
+            },
+            {
+              "distance": {
+                "value": 75,
+                "unit": "yd"
+              }
+            },
+            {
+              "distance": {
+                "value": 150,
+                "unit": "yd"
+              }
+            },
+            {
+              "distance": {
+                "value": 225,
+                "unit": "yd"
+              }
+            },
+            {
+              "distance": {
+                "value": 300,
+                "unit": "yd"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Stage 8",
+          "targets": [
+            {
+              "distance": {
+                "value": 225,
+                "unit": "yd"
+              }
+            },
+            {
+              "distance": {
+                "value": 300,
+                "unit": "yd"
+              }
+            },
+            {
+              "distance": {
+                "value": 100,
+                "unit": "yd"
+              }
+            },
+            {
+              "distance": {
+                "value": 175,
+                "unit": "yd"
+              }
+            },
+            {
+              "distance": {
+                "value": 250,
+                "unit": "yd"
+              }
+            },
+            {
+              "distance": {
+                "value": 50,
+                "unit": "yd"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "options": {
+    "uuids": ["1A2B3C4D5E", "2B3C4D5E6F", "3C4D5E6F70"],
+    "maxPayloadBytes": 1000
+  },
+  "expected": {
+    "payloads": [
+      {
+        "part": 1,
+        "text": "{\"appName\":\"Quantum\",\"appVersion\":\"792\",\"data\":\"f9b04f924390cd4eca76a4843d8f3b80806ddf74aa95649e43a692699b2d92b331ea53efd1318e3befd42d9227efd138844691cd49fa3bf2cd2d923bf2d3289227efd138844691cd49fa3bf1cd2d923bf1d12d9227efd138844691cd49fa3bf0cd2d923bf1d6289227efd138844691cd49fa3bf7cd2d923bf4d4318e3bf3c427ef45efb5599222efd1319226f6d1318e3bf3c427ef45efb54e9244b7807adb37f1cd5edf67a28274ca6ee3b578cd63e6db4cec3b97a5318e3bf3cd318922efd1318e32f9b04f924387cd2c9227efcd2c8b27efd1318e32f9b04f924387cd2f9227efcd2f8c22efd1318e32f9b04f924387cd2e9227efcd2e8e27efd1318e32f9b04f924387cd299227efcd2c8e27efd1318e32f9b04f924387cd289227efcd2c8922efd1318e32f9b04f924390cd4eca76a4843d8d3b80806ddf74aa95649e43a692699b2d92b331ea53efd1318e3befd02d8e3bf3cd2d9b2d92b331ea53efd0318e3befd02a8b3bf3cd2d9b2d92b331ea53efd3318e3befd3288e3bf3cd2d9b2d92b331ea53efd2318e3befd42d9227efd138844691cd49fa3bf7cd2d923bf2d3289227efd138844691cd49fa3bf6cd2d923bf1d12d9227efd138\",\"dataType\":1,\"rawValue\":\"\",\"uuid\":\"1A2B3C4D5E\",\"versionType\":0}"
+      },
+      {
+        "part": 2,
+        "text": "{\"appName\":\"Quantum\",\"appVersion\":\"792\",\"data\":\"c8a73e8172a1da3fd94795934c990ab1971ccc459b82158d72978518881ca3a440f962dec6409d0adec75e980ac2da5c881ca3a440f962dec7409d0adec45c9d0ac2da5c881ca3a440f962dec4409d0adec45b980ac2da5c881ca3a440f962dec5409d0adec1598116dec6499777a0da38e90ac6da5c810ac3c35c8116dec6499777a0da38e90ac7da5c810ac0c4598116dec6499777a0da38fe0aa1820dca43d2c340ee4782970fc4528bd638c85586d356fc74dea2288116dec6408117c7c6409d0ac2d356fc74dea2288117dec6408114c0c3409d0ac2d356fc74dea2288114dec6408115c2c6409d0ac2d356fc74dea2288115dec6408117c2c6409d0ac2d356fc74dea2288112dec6408117c5c3409d0ac2d356fc74dea2288113dec6408114c7c6409d0ac2d356fc74dea23f817586970bc806c4da2fcc56939505d95fd2a209de52d7cc3dff0aa6b2409d0ac2da409c11c7da5c8116d7cc3dff0aa6b2409c0ac2da409f13c2da5c8116d7cc3dff0aa6b2409f0ac2da409816dec6409d03c8a73e8172b6da5f8116deda5d9f13dec6409d03c8a73e8172b6da588116deda5e9d16dec6409d03\",\"dataType\":1,\"rawValue\":\"\",\"uuid\":\"2B3C4D5E6F\",\"versionType\":0}"
+      },
+      {
+        "part": 3,
+        "text": "{\"appName\":\"Quantum\",\"appVersion\":\"792\",\"data\":\"dfd62db06db6ab2ce85882e25faa15a6e60ffd5a8cf306bc6d80f40bb903b4d553c87dc9b253ac15c9b548a915d5ab4fb903b4d553c86ac9d40bfd5e80a748b07a84f71eff5091fe5fc85c96f35aa668b7ab2bd815d5ab4fb015d7b74fb009c9b75aa668b7ab2bd815d4ab4fb015d7b04ab009c9b75aa668b7ab2bd815d7ab4fb015d2b253ac15d5a245cd6bc9d33bb00ac9b753b008d0b753ac15d5a245cd6bc9d33bb00dc9b753b00bd7b253ac15d5a245cd6bc9d33bb00cc9b753b00ad5b753ac15d5a245cd6bc9d32cb06a91e618f919ddab3cfd4984e416e840c5d31aef4dc0bd2ece15b1c353ac15d5ab53ae0bd0ab4fb009c0bd2ece15b1c353ad15d5ab53af09d5ab4fb009c0bd2ece15b1c353ae15d5ab53ad09d5ab4fb009c0bd2ece15b1c353af15d5ab53ad0ed0ab4fb009c0bd2ece15b1c353a815d5ab53ae0cd5ab4fb009c0bd2ece15b1c353a915d5ab53a909c9b753ac1c\",\"dataType\":1,\"rawValue\":\"\",\"uuid\":\"3C4D5E6F70\",\"versionType\":0}"
+      }
+    ],
+    "records": [
+      [
+        ":QR,TS,Stage 1,Capacity Test%",
+        ":QR,TD,0,0,,50,0,0%",
+        ":QR,TD,1,0,,125,0,0%",
+        ":QR,TD,2,0,,200,0,0%",
+        ":QR,TD,3,0,,275,0,0%",
+        ":QR,TD,4,0,,75,0,0%",
+        ":QR,TD,5,0,,150,0,0%",
+        ":QR,TS,Stage 2,Capacity Test%",
+        ":QR,TD,0,0,,75,0,0%",
+        ":QR,TD,1,0,,150,0,0%",
+        ":QR,TD,2,0,,225,0,0%",
+        ":QR,TD,3,0,,300,0,0%",
+        ":QR,TD,4,0,,100,0,0%",
+        ":QR,TD,5,0,,175,0,0%",
+        ":QR,TS,Stage 3,Capacity Test%",
+        ":QR,TD,0,0,,100,0,0%",
+        ":QR,TD,1,0,,175,0,0%",
+        ":QR,TD,2,0,,250,0,0%",
+        ":QR,TD,3,0,,50,0,0%",
+        ":QR,TD,4,0,,125,0,0%",
+        ":QR,TD,5,0,,200,0,0%"
+      ],
+      [
+        ":QR,TS,Stage 4,Capacity Test%",
+        ":QR,TD,0,0,,125,0,0%",
+        ":QR,TD,1,0,,200,0,0%",
+        ":QR,TD,2,0,,275,0,0%",
+        ":QR,TD,3,0,,75,0,0%",
+        ":QR,TD,4,0,,150,0,0%",
+        ":QR,TD,5,0,,225,0,0%",
+        ":QR,TS,Stage 5,Capacity Test%",
+        ":QR,TD,0,0,,150,0,0%",
+        ":QR,TD,1,0,,225,0,0%",
+        ":QR,TD,2,0,,300,0,0%",
+        ":QR,TD,3,0,,100,0,0%",
+        ":QR,TD,4,0,,175,0,0%",
+        ":QR,TD,5,0,,250,0,0%",
+        ":QR,TS,Stage 6,Capacity Test%",
+        ":QR,TD,0,0,,175,0,0%",
+        ":QR,TD,1,0,,250,0,0%",
+        ":QR,TD,2,0,,50,0,0%",
+        ":QR,TD,3,0,,125,0,0%",
+        ":QR,TD,4,0,,200,0,0%"
+      ],
+      [
+        ":QR,TS,Stage 6,Capacity Test%",
+        ":QR,TD,5,0,,275,0,0%",
+        ":QR,TS,Stage 7,Capacity Test%",
+        ":QR,TD,0,0,,200,0,0%",
+        ":QR,TD,1,0,,275,0,0%",
+        ":QR,TD,2,0,,75,0,0%",
+        ":QR,TD,3,0,,150,0,0%",
+        ":QR,TD,4,0,,225,0,0%",
+        ":QR,TD,5,0,,300,0,0%",
+        ":QR,TS,Stage 8,Capacity Test%",
+        ":QR,TD,0,0,,225,0,0%",
+        ":QR,TD,1,0,,300,0,0%",
+        ":QR,TD,2,0,,100,0,0%",
+        ":QR,TD,3,0,,175,0,0%",
+        ":QR,TD,4,0,,250,0,0%",
+        ":QR,TD,5,0,,50,0,0%"
+      ]
+    ]
+  }
+}
