@@ -2,7 +2,7 @@
   "description": "AB's single-code export of the PFG rimfire match, six sectors and twelve targets. The group name is truncated to 20 characters by AB's exporter.",
   "provenance": {
     "kind": "observed",
-    "source": "Exported by AB Quantum (envelope appVersion 792), supplied 2026-10-08. Private evidence.",
+    "source": "Exported by AB Quantum (envelope appVersion 792), supplied 2026-10-08.",
     "appImport": "Not imported into Quantum by us."
   },
   "request": {

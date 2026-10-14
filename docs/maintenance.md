@@ -8,7 +8,7 @@ Nothing detects a Quantum update automatically. The check is manual:
   import a known code (`sample-cup.json` once it has passed, otherwise `import-test.json`) and
   record the result in compatibility.md.
 - If an AB export with a different `appVersion`, `versionType` or record shape turns up, add it to
-  `test/private-fixtures/`, decode it, and record the difference in
+  `test/fixtures/`, decode it, and record the difference in
   quantum-format-observations.md before changing the encoder.
 
 ## When something breaks
@@ -30,7 +30,6 @@ Nothing detects a Quantum update automatically. The check is manual:
 
 ## Publication
 
-The repository is private. Publishing it needs, in order: AB's agreement; a license decision
-(Apache 2.0 is proposed, not adopted); and a clean export containing no fixtures, screenshots,
-correspondence or history from this private experiment. Public test vectors need metadata we
-can explain on its own, not AB's UUIDs.
+The repository is public under the Apache License 2.0, as discussed with Applied Ballistics. The
+AB-exported fixtures are published with their agreement. `package.json` keeps `"private": true` so
+nothing is published to npm by accident; publishing to a registry is a separate decision.

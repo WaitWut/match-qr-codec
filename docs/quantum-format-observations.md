@@ -12,7 +12,7 @@ date, and mark it confirmed.
 | Large Export Test          | 2     | AB Quantum export, appVersion 792, received 2026-10-14        | Six sectors of six targets. Split inside Sector 6.            |
 | `qr import test` (derived) | 1     | The PFG export, renamed and every distance +1, AB's UUID kept | Imported successfully into Quantum, reported 2026-10-09.      |
 
-The images and payload text are in `test/private-fixtures/`. They are private evidence.
+The images and payload text are in `test/fixtures/`.
 
 ## Envelope
 

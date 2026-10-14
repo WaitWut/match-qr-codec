@@ -9,8 +9,7 @@ import { readFileSync, writeFileSync } from "node:fs";
 import { decodeMatch, decodePayload, encodeMatch, type MatchRequest } from "../src/index.ts";
 
 const root = new URL("../", import.meta.url);
-const fixture = (name: string) =>
-  readFileSync(new URL(`test/private-fixtures/${name}`, root), "utf8");
+const fixture = (name: string) => readFileSync(new URL(`test/fixtures/${name}`, root), "utf8");
 
 function records(texts: string[]): string[][] {
   return texts.map((text) => {
@@ -58,8 +57,7 @@ const specs: Spec[] = [
       "AB's two-code export of Large Export Test: six sectors of six targets, split inside Sector 6. Any maxPayloadBytes from 1921 to 1960 reproduces AB's split.",
     provenance: {
       kind: "observed",
-      source:
-        "Exported by AB Quantum (envelope appVersion 792), supplied 2026-10-14. Private evidence.",
+      source: "Exported by AB Quantum (envelope appVersion 792), supplied 2026-10-14.",
       appImport: "Not imported into Quantum by us.",
     },
     request: fromFixtures(largeExport),
@@ -72,8 +70,7 @@ const specs: Spec[] = [
       "AB's single-code export of the PFG rimfire match, six sectors and twelve targets. The group name is truncated to 20 characters by AB's exporter.",
     provenance: {
       kind: "observed",
-      source:
-        "Exported by AB Quantum (envelope appVersion 792), supplied 2026-10-08. Private evidence.",
+      source: "Exported by AB Quantum (envelope appVersion 792), supplied 2026-10-08.",
       appImport: "Not imported into Quantum by us.",
     },
     request: fromFixtures(singleExport),

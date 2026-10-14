@@ -9,7 +9,7 @@ const jsQR = jsQRModule.default;
 const root = new URL("../", import.meta.url);
 
 export function fixture(name: string): string {
-  return readFileSync(new URL(`test/private-fixtures/${name}`, root), "utf8");
+  return readFileSync(new URL(`test/fixtures/${name}`, root), "utf8");
 }
 
 export interface Vector {
@@ -37,7 +37,7 @@ export function readJson(path: string): unknown {
 /** Decodes a QR code from a PNG file with jsQR, independent of the renderer that made it. */
 export function readPng(name: string): string | undefined {
   const png = PNG.sync.read(
-    readFileSync(new URL(`test/private-fixtures/${name}`, root)) as unknown as Buffer,
+    readFileSync(new URL(`test/fixtures/${name}`, root)) as unknown as Buffer,
   );
   return jsQR(new Uint8ClampedArray(png.data), png.width, png.height)?.data;
 }

@@ -2,7 +2,7 @@
 
 ## 0.1.0 — 2026-10-14
 
-First private build. Supports contract version 1 (draft).
+First build. Apache License 2.0. Supports contract version 1 (draft).
 
 - `encodeMatch(request, options)`: validation, record-level splitting with sector continuation,
   UUID-derived masking, deterministic output.

@@ -5,11 +5,10 @@ and returns codes. Everything about where the match comes from belongs to the ca
 
 ## Installing
 
-The repository is private. Two ways to consume it, both pinned:
+Two ways to consume it, both pinned:
 
 - **Git dependency at a tag**, for example `"match-qr-codec": "github:WaitWut/match-qr-codec#v0.1.0"`.
-  npm runs the `prepare` script, which builds `dist/`. The installing machine and CI need read
-  access to the repository.
+  npm runs the `prepare` script, which builds `dist/`.
 - **Vendored snapshot**: copy `dist/` and `schemas/` into the consuming repository with a note of
   the upstream tag and commit. Keep the copy unmodified and replace it on each update.
 

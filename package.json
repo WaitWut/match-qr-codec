@@ -2,7 +2,7 @@
   "name": "match-qr-codec",
   "version": "0.1.0",
   "private": true,
-  "license": "UNLICENSED",
+  "license": "Apache-2.0",
   "description": "Encode a precision rifle match's stages and target distances as AB Quantum grouped-import QR payloads, and decode them back. Experimental; built from observed exports.",
   "type": "module",
   "sideEffects": false,

@@ -3,8 +3,8 @@
 Turns a precision rifle match's stages and target distances into the QR payloads AB Quantum's
 grouped import reads, and reads them back.
 
-**Experimental and private.** The format was learned from codes Quantum exported, not from an
-AB specification. The encoder reproduces AB's own exports byte for byte, but no code generated
+**Experimental.** The format was learned from codes Quantum exported, not from an AB
+specification. The encoder reproduces AB's own exports byte for byte, but no code generated
 from a fresh match has been imported into Quantum yet. See
 [docs/compatibility.md](docs/compatibility.md) before relying on anything.
 
@@ -81,10 +81,15 @@ formatting. `node --experimental-strip-types scripts/build-vectors.ts` regenerat
 `examples/result.json`; observed vectors always take their expected payloads from the fixtures,
 never from the encoder.
 
-`test/private-fixtures/` holds AB's exported images and payloads. They are private evidence and
-never go into a public release.
+`test/fixtures/` holds codes exported by AB Quantum, published with Applied Ballistics'
+agreement. They are evidence; never edit them.
+
+## Trademarks
+
+AB Quantum, Applied Ballistics and Garmin are trademarks of their owners. This project is
+independent and is not affiliated with, endorsed by or supported by them. Their names are used only
+to say which app's import format the codec targets.
 
 ## License
 
-None granted. All rights reserved until a license is chosen; see
-[docs/maintenance.md](docs/maintenance.md#publication).
+[Apache License 2.0](LICENSE). See [NOTICE](NOTICE).

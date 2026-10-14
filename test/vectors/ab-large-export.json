@@ -2,7 +2,7 @@
   "description": "AB's two-code export of Large Export Test: six sectors of six targets, split inside Sector 6. Any maxPayloadBytes from 1921 to 1960 reproduces AB's split.",
   "provenance": {
     "kind": "observed",
-    "source": "Exported by AB Quantum (envelope appVersion 792), supplied 2026-10-14. Private evidence.",
+    "source": "Exported by AB Quantum (envelope appVersion 792), supplied 2026-10-14.",
     "appImport": "Not imported into Quantum by us."
   },
   "request": {
