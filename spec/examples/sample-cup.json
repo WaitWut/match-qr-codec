@@ -1,0 +1,21 @@
+{
+  "format": "match-target-data",
+  "version": "1.0",
+  "match": {
+    "name": "Sample Cup",
+    "stages": [
+      {
+        "name": "Fence",
+        "targets": [
+          { "distance": { "value": 63, "unit": "yd" } },
+          { "distance": { "value": 112, "unit": "yd" } },
+          { "distance": { "value": 154, "unit": "yd" } }
+        ]
+      },
+      {
+        "name": "Bench",
+        "targets": [{ "distance": { "value": 88, "unit": "yd" } }]
+      }
+    ]
+  }
+}

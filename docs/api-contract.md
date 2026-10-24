@@ -1,8 +1,12 @@
 # Match QR contract, version 1 (draft)
 
-This is the primary specification. The JSON Schemas in `schemas/` describe the structure; this
-document adds the rules a schema cannot express. Version 1 is a draft until it has been reviewed;
-see [Versions](#versions).
+This specifies the encoder: the request `encodeMatch` takes and the result it returns. The JSON
+Schemas in `schemas/` describe the structure; this document adds the rules a schema cannot express.
+Version 1 is a draft until it has been reviewed; see [Versions](#versions).
+
+Match software that is not tied to this encoder should write
+[Match Target Data](../spec/match-target-data.md) instead. `encodeDocument` translates a document
+into this request and returns the same result, with every issue path pointing into the document.
 
 Schema validation establishes structure, not that Quantum will import the result. What has
 actually been tested in the app is in [compatibility.md](compatibility.md).

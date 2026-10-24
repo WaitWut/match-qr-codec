@@ -1,0 +1,88 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Match Target Data, version 1.0 (draft)",
+  "description": "A match's stages and target distances, for apps that import them. Draft: may change incompatibly before 1.0 is final. See match-target-data.md.",
+  "type": "object",
+  "$defs": {
+    "text": {
+      "type": "string",
+      "pattern": "^[^\\u0000-\\u001F\\u007F]*[^\\s\\u0000-\\u001F\\u007F][^\\u0000-\\u001F\\u007F]*$",
+      "description": "At least one character that is not a space, and no control characters."
+    }
+  },
+  "properties": {
+    "format": {
+      "const": "match-target-data"
+    },
+    "version": {
+      "const": "1.0"
+    },
+    "match": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/text",
+          "description": "Proposed. Identifies the match across revisions; globally unique. A UUID is recommended."
+        },
+        "revision": {
+          "$ref": "#/$defs/text",
+          "description": "Proposed. Changes whenever the document's content changes. Compare for equality only."
+        },
+        "name": {
+          "$ref": "#/$defs/text"
+        },
+        "stages": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "$ref": "#/$defs/text"
+              },
+              "targets": {
+                "type": "array",
+                "minItems": 1,
+                "description": "The stage's distinct targets, in the order they are first engaged.",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "label": {
+                      "$ref": "#/$defs/text",
+                      "description": "Proposed. The target's name or letter in the matchbook."
+                    },
+                    "distance": {
+                      "type": "object",
+                      "properties": {
+                        "value": {
+                          "type": "number",
+                          "exclusiveMinimum": 0
+                        },
+                        "unit": {
+                          "enum": ["yd", "m"]
+                        }
+                      },
+                      "required": ["value", "unit"],
+                      "additionalProperties": false
+                    }
+                  },
+                  "required": ["distance"],
+                  "additionalProperties": false
+                }
+              }
+            },
+            "required": ["name", "targets"],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": ["name", "stages"],
+      "dependentRequired": {
+        "revision": ["id"]
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": ["format", "version", "match"],
+  "additionalProperties": false
+}

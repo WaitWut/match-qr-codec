@@ -11,11 +11,13 @@
       "types": "./dist/index.d.ts",
       "default": "./dist/index.js"
     },
-    "./schemas/*": "./schemas/*"
+    "./schemas/*": "./schemas/*",
+    "./spec/*": "./spec/*"
   },
   "files": [
     "dist",
-    "schemas"
+    "schemas",
+    "spec"
   ],
   "engines": {
     "node": ">=22.13.0"

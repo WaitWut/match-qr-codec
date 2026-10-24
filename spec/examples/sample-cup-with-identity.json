@@ -1,0 +1,23 @@
+{
+  "format": "match-target-data",
+  "version": "1.0",
+  "match": {
+    "id": "6f1c2a9e-4b7d-4e2a-9f3c-1d8b5e0a7c42",
+    "revision": "2026-10-24T14:05:00Z",
+    "name": "Sample Cup",
+    "stages": [
+      {
+        "name": "Fence",
+        "targets": [
+          { "label": "T1", "distance": { "value": 63, "unit": "yd" } },
+          { "label": "T2", "distance": { "value": 112, "unit": "yd" } },
+          { "label": "T3", "distance": { "value": 154, "unit": "yd" } }
+        ]
+      },
+      {
+        "name": "Bench",
+        "targets": [{ "label": "Plate A", "distance": { "value": 88, "unit": "yd" } }]
+      }
+    ]
+  }
+}
