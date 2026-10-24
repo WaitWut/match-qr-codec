@@ -4,14 +4,24 @@ Read this before changing anything here.
 
 ## What this repository is
 
-A standalone codec: complete match JSON in, AB Quantum grouped-import QR payload strings out, and
-back. It is deliberately independent of MatchOps or any other application. Decided by Eric Wilson,
-2026-10-14.
+Two things, both deliberately independent of MatchOps or any other application:
 
-- No application concepts: no club, account, match id, permission, feature flag, image rendering
-  or UI. Those belong to the consumer.
+- **Match Target Data** (`spec/`), a neutral document format for a match's stages and target
+  distances. Producers write it; consumers read it directly or through a translator. Draft, written
+  for AB Quantum's review. Added by Eric Wilson, 2026-10-24.
+- **A codec** (`src/`): AB Quantum grouped-import QR payload strings from a match, and back.
+  `encodeDocument` translates a Match Target Data document; `encodeMatch` takes the encoder's own
+  request. Decided by Eric Wilson, 2026-10-14.
+
+Rules:
+
+- No application concepts in the codec: no club, account, match id, permission, feature flag,
+  image rendering or UI. Those belong to the consumer. The spec's optional `match.id` and
+  `match.revision` are proposed for consumers that recognise updates (Eric, 2026-10-24); the
+  Quantum translator ignores them.
 - No runtime dependencies, no network, no server. It must run in a browser.
-- `docs/api-contract.md` is the specification. Code, schemas, examples and docs change together.
+- `spec/match-target-data.md` specifies the document; `docs/api-contract.md` specifies the encoder.
+  Code, schemas, examples and docs change together.
 
 ## The format is observed, not specified
 

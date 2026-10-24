@@ -3,6 +3,12 @@
 Turns a precision rifle match's stages and target distances into the QR payloads AB Quantum's
 grouped import reads, and reads them back.
 
+It also holds the draft of **Match Target Data**
+([spec/match-target-data.md](spec/match-target-data.md)), a neutral format for a match's stages
+and target distances. Match software writes one document. An app reads it directly, or through a
+translator into its own format, so the app's format can change without breaking every match
+platform. `encodeDocument` is the translator into AB Quantum's codes.
+
 **Experimental.** The format was learned from codes Quantum exported, not from an AB
 specification. The encoder reproduces AB's own exports byte for byte, and codes it built
 from fresh matches, including a three-code split, have imported on Android. See
@@ -59,6 +65,7 @@ if (result.ok) {
 
 | File                                                                       | What it covers                                           |
 | -------------------------------------------------------------------------- | -------------------------------------------------------- |
+| [spec/match-target-data.md](spec/match-target-data.md)                     | Match Target Data: the neutral document format, draft    |
 | [docs/api-contract.md](docs/api-contract.md)                               | The contract: fields, options, results, errors, versions |
 | [docs/quantum-format-observations.md](docs/quantum-format-observations.md) | What the Quantum format is known to be, and how we know  |
 | [docs/compatibility.md](docs/compatibility.md)                             | What has been tested, in code and in the app             |
